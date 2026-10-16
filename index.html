@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basics of Data Science (U24CS503) - Course Website</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2a35; --card:#f3f7fb; --accent:#1f4e79; --line:#cfdbe6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14202b; --fg:#e6eef5; --card:#1c2d3b; --accent:#7db7e8; --line:#2f4658; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); line-height:1.55; }
+  header { background:var(--accent); color:#fff; padding:28px 20px; }
+  header h1 { margin:0 0 4px; font-size:1.6rem; }
+  header p { margin:0; opacity:.9; }
+  nav { position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--line); padding:8px 12px; display:flex; flex-wrap:wrap; gap:6px 16px; z-index:5; }
+  nav a { color:var(--accent); text-decoration:none; font-weight:600; font-size:.92rem; }
+  main { max-width:960px; margin:0 auto; padding:8px 18px 40px; }
+  section { margin-top:28px; }
+  h2 { color:var(--accent); border-bottom:2px solid var(--line); padding-bottom:4px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .table-wrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; font-size:.92rem; }
+  th, td { border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+  th { background:var(--card); }
+  a.btn { display:inline-block; background:var(--accent); color:#fff; padding:8px 14px; border-radius:8px; text-decoration:none; margin:4px 6px 4px 0; }
+  footer { text-align:center; padding:20px; font-size:.85rem; opacity:.8; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Basics of Data Science</h1>
+  <p>Course code U24CS503 &middot; B.Tech CSE, Semester V &middot; 3 credits &middot; Coordinator: Irshana Tabassum</p>
+</header>
+<nav>
+  <a href="#overview">Overview</a><a href="#resources">Resources</a><a href="#schedule">Weekly schedule</a>
+  <a href="#assessment">Assessment</a><a href="#ai">AI policy</a><a href="#contact">Contact</a>
+</nav>
+<main>
+<section id="overview">
+  <h2>Course overview</h2>
+  <p>This course introduces the data science pipeline: understanding data, preparing it, mining patterns, building and evaluating simple models, and communicating results responsibly. Learning is hands-on, case-based and supported by AI tools used with disclosure.</p>
+  <div class="card">
+    <strong>Course outcomes</strong>
+    <ul>
+      <li><b>CO1</b> Explain the data science lifecycle, types of data and applications (K2).</li>
+      <li><b>CO2</b> Apply data collection, cleaning and pre-processing techniques using Python (K3).</li>
+      <li><b>CO3</b> Apply basic data mining techniques: association rules, classification, clustering (K3).</li>
+      <li><b>CO4</b> Analyse basic machine learning models using evaluation metrics (K4).</li>
+      <li><b>CO5</b> Evaluate visualisations and data-driven decisions for effectiveness, fairness and ethics (K5).</li>
+    </ul>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Learning resources</h2>
+  <div class="card">
+    <a class="btn" href="kmeans_simulation.html">k-Means Playground (interactive)</a>
+    <ul>
+      <li>Textbook: Han, Kamber, Pei &ndash; <i>Data Mining: Concepts and Techniques</i></li>
+      <li>Grus &ndash; <i>Data Science from Scratch</i>; VanderPlas &ndash; <i>Python Data Science Handbook</i></li>
+      <li>Lecture slides and notebooks: add your Google Drive / GitHub folder links here</li>
+      <li>Practice sets: Apriori worked examples, k-means, confusion-matrix problems (add links)</li>
+      <li>Teaching case: Charminar Mart &ndash; market-basket analysis (shared in class)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Weekly schedule</h2>
+  <p>Week 1 begins on the first teaching day of the semester (dates to be updated from the academic calendar). Lectures: Mon / Tue / Thu; Saturday slot for lab, tutorial or remedial class.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Week</th><th>Topics</th><th>Saturday slot</th><th>Milestone</th></tr>
+    <tr><td>1</td><td>What is data science; lifecycle; data types</td><td>Python refresher</td><td>Diagnostic quiz</td></tr>
+    <tr><td>2</td><td>Data sources, big data, applications; tools</td><td>Notebook lab</td><td></td></tr>
+    <tr><td>3</td><td>Roles, case discussion, unit wrap-up</td><td>Unit 1 assignment</td><td>Quiz 1</td></tr>
+    <tr><td>4</td><td>Data cleaning; missing values</td><td>Pandas lab</td><td></td></tr>
+    <tr><td>5</td><td>Outliers, duplicates, encoding</td><td>Pandas lab</td><td></td></tr>
+    <tr><td>6</td><td>Scaling, EDA, descriptive statistics</td><td>Remedial</td><td>Test 1 (U1-U2)</td></tr>
+    <tr><td>7</td><td>Introduction to data mining; frequent itemsets</td><td>Apriori practice</td><td></td></tr>
+    <tr><td>8</td><td>Association rules; classification intro</td><td>Teaching case</td><td>Case released</td></tr>
+    <tr><td>9</td><td>Clustering (k-means); simulation</td><td>k-means playground</td><td>Quiz 2; case report due</td></tr>
+    <tr><td>10</td><td>ML workflow; train/test; overfitting</td><td>Notebook lab</td><td></td></tr>
+    <tr><td>11</td><td>k-NN, decision trees</td><td>Notebook lab</td><td></td></tr>
+    <tr><td>12</td><td>Evaluation metrics; model comparison</td><td>Remedial</td><td>Test 2 (U3-U4)</td></tr>
+    <tr><td>13</td><td>Visualisation principles; dashboards</td><td>Dashboard lab</td><td>Mini project kick-off</td></tr>
+    <tr><td>14</td><td>Ethics, bias, privacy; responsible AI</td><td>Gallery walk</td><td>Exit survey</td></tr>
+    <tr><td>15</td><td>Revision; CO attainment review</td><td>Remedial</td><td>Mini project due</td></tr>
+  </table>
+  </div>
+</section>
+
+<section id="assessment">
+  <h2>Assessment plan</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Component</th><th>Marks</th><th>COs</th></tr>
+    <tr><td>Test 1 and Test 2 (20 each, best-weighted to 20 total)</td><td>20</td><td>CO1-CO4</td></tr>
+    <tr><td>Assignments and weekly quizzes</td><td>10</td><td>CO1-CO4</td></tr>
+    <tr><td>Case report / lab / dashboard mini project</td><td>10</td><td>CO3, CO5</td></tr>
+    <tr><td>End-semester examination</td><td>60</td><td>CO1-CO5</td></tr>
+    <tr><th>Total</th><th>100</th><th></th></tr>
+  </table>
+  </div>
+  <p>Course-exit survey and exit tickets are used for indirect CO attainment; CO attainment is reviewed every semester.</p>
+</section>
+
+<section id="ai">
+  <h2>AI use policy (summary)</h2>
+  <ul>
+    <li>AI may be used to explain concepts, practise and debug your own code &ndash; always disclose it with an AI Use Statement.</li>
+    <li>AI is not allowed in closed-book tests, quizzes or viva.</li>
+    <li>Never upload personal or confidential data to public AI tools. You are responsible for verifying AI output.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><b>Course coordinator:</b> Irshana Tabassum<br>
+    <b>Department:</b> [add department and institution]<br>
+    <b>Email:</b> [add email]<br>
+    <b>Office hours:</b> [add day / time / room]<br>
+    <b>Exit ticket form:</b> [add Google Form link]</p>
+  </div>
+</section>
+</main>
+<footer>Basics of Data Science &middot; U24CS503 &middot; Course website created for the UGC MMTTP / IIT Ropar CBPAI Advanced FDP capstone</footer>
+</body>
+</html>
